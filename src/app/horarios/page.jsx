@@ -9,8 +9,8 @@ export default function Horarios() {
     const doctores = [
         {
             id: 1,
-            nombre: "Dr. Juan Perez",
-            usuario: "@dayahnarar",
+            nombre: "Dr. Deadpool de Jesus",
+            usuario: "@Deadpool",
             especialidad: "Medicina General"
         },
         {
@@ -30,13 +30,13 @@ export default function Horarios() {
     return (
         <>
             <Navbar />
-            <div className="flex flex-col items-center justify-center">
-                <div className="bg-gray-100 p-32 rounded-xl shadow-xl">
+            <div className="flex flex-col items-center">
+                <div className="bg-gray-100 p-10 rounded-xl shadow-xl items-center">
                     <div className="text-center">
                         <h3 className="mb-1 text-3xl text-center font-bold text-gray-900 dark:text-green-500">Reserva Médica</h3>
-                        <p>Centro Médico</p>
+
                     </div>
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 items-center">
                         {doctores.map((doctor) => (
                             <CartaHorario
                                 key={doctor.id}

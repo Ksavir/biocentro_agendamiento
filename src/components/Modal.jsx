@@ -11,7 +11,7 @@ export default function Modal() {
             <dialog id="my_modal_1" className="modal">
                 <div className="modal-box bg-gray-100 items-center">
                     <h3 className="font-bold text-lg text-center text-emerald-600">Hora Reservada!</h3>
-                    <p className="py-4">Estimado paciente, muchas gracias por reservar a través de nuestro portal,
+                    <p className="py-4 text-gray-800 font-medium">Estimado paciente, muchas gracias por reservar a través de nuestro portal,
                         le enviaremos la confirmación de la reservar a su correo electrónico y un
                         SMS a su numero de teléfono.
                         <br />

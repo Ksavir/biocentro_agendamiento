@@ -8,7 +8,6 @@ import CartaDoctor from './CartaDoctor';
 
 export default function CartaHorarios({ nombre, especialidad, usuario }) {
 
-    const userName = ["@kevinsavir", "@dayahnarar", "@midudev"]
 
     return (
         <>
@@ -35,13 +34,13 @@ export default function CartaHorarios({ nombre, especialidad, usuario }) {
                         </div>
                     </section> */}
 
-            <div className="collapse bg-gray-200 text-center">
+            <div className="collapse bg-gray-200 text-center w-3/4">
                 <input type="checkbox" className="" />
                 <div className="collapse-title text-xl font-medium">
                     <div className="avatar">
                         <figure>
                             <div className="avatar">
-                                <div className="bg-neutral-focus text-neutral-content rounded-full w-36">
+                                <div className="bg-neutral-focus text-neutral-content rounded-full w-32">
                                     <img src={`https://unavatar.io/${usuario}`} alt={nombre} />
                                 </div>
                             </div>
@@ -52,6 +51,13 @@ export default function CartaHorarios({ nombre, especialidad, usuario }) {
                         <div className="pl-3">
                             <h3 className="text-gray-600 font-semibold text-sm">{nombre}</h3>
                             <h3 className=" text-gray-500 text-lg font-bold">{especialidad}</h3>
+                            <div className="rating">
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400"  />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+                            </div>
                         </div>
                     </section>
                 </div>
