@@ -9,7 +9,7 @@ export default function Modal() {
         <>
             <button className="btn rounded-3xl w-32 bg-green-600 text-white font-bold" onClick={() => document.getElementById('my_modal_1').showModal()}>Agendar</button>
             <dialog id="my_modal_1" className="modal">
-                <div className="modal-box bg-gray-100">
+                <div className="modal-box bg-gray-100 items-center">
                     <h3 className="font-bold text-lg text-center text-emerald-600">Hora Reservada!</h3>
                     <p className="py-4">Estimado paciente, muchas gracias por reservar a través de nuestro portal,
                         le enviaremos la confirmación de la reservar a su correo electrónico y un
@@ -22,7 +22,7 @@ export default function Modal() {
                         src="/check.png"
                         width={70}
                         height={70}
-                        className="flex items-center"
+                        className="mx-auto"
                     />
                     <div className="modal-action">
                         <form method="dialog">

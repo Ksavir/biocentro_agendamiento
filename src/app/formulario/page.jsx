@@ -13,37 +13,37 @@ export default function Formulario() {
                     <form className="flex flex-wrap">
                         <input
                             type="text"
-                            className="bg-gray-100 text-gray-200 border-2  border-emerald-500 rounded-md p-2 mb-4
+                            className="bg-gray-100 text-gray-600 border-2  border-emerald-500 rounded-md p-2 mb-4
                             focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
                             placeholder="Full Name"
                         />
                         <input
                             type="email"
-                            className="bg-gray-100 text-gray-200 border-2 border-emerald-500 rounded-md p-2 mb-4
+                            className="bg-gray-100 text-gray-600 border-2 border-emerald-500 rounded-md p-2 mb-4
                             focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
                             placeholder="ejemplo@correo.com"
                         />
                         <input
-                            type="number"
-                            className="bg-gray-100 text-gray-200 border-2 border-emerald-500 rounded-md p-2 mb-4
+                            type="text"
+                            className="bg-gray-100 text-gray-600 border-2 border-emerald-500 rounded-md p-2 mb-4
                             focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
                             placeholder="+56 9 1234 5678 "
                         />
                         <input
-                            type="number"
-                            className="bg-gray-100 text-gray-200 border-2 border-emerald-500 rounded-md p-2 mb-4
+                            type="text"
+                            className="bg-gray-100 text-gray-600 border-2 border-emerald-500 rounded-md p-2 mb-4
                             focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
                             placeholder="XX.XXX.XXX-X"
                         />
                         <input
                             type="text"
-                            className="bg-gray-100 text-gray-200 border-2 border-emerald-500 rounded-md p-2 mb-4
+                            className="bg-gray-100 text-gray-600 border-2 border-emerald-500 rounded-md p-2 mb-4
                             focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
                             placeholder="Dirección"
                         />
                         <input
                             type="text"
-                            className="bg-gray-100 text-gray-200 border-2 border-emerald-500 rounded-md p-2 mb-4
+                            className="bg-gray-100 text-gray-600 border-2 border-emerald-500 rounded-md p-2 mb-4
                             focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
                             placeholder="Comuna"
                         />

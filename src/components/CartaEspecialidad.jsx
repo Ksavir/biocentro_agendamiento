@@ -16,9 +16,9 @@ export default function EspecialidadesMedicas({ area, icon, id }) {
 
     return (
         <>
-            <div class="flex ">
+            <div class="flex">
                 <input type="checkbox" id={id} className="peer hidden" />
-                <label htmlFor={id} className=" text-black flex gap-x-2 items-center select-none cursor-pointer rounded-lg border-2 border-emerald-600 py-3 px-6 font-bold transition-colors duration-200 ease-in-out peer-checked:bg-green-700 peer-checked:text-gray-300 peer-checked:border-green-700 ">
+                <label htmlFor={id} className=" w-full text-black flex gap-x-2 items-center select-none cursor-pointer rounded-lg border-2 border-emerald-600 py-3 px-6 font-bold transition-colors duration-200 ease-in-out peer-checked:bg-green-700 peer-checked:text-gray-300 peer-checked:border-green-700 ">
                     {iconMap[icon]}
                     {area}
                 </label>
