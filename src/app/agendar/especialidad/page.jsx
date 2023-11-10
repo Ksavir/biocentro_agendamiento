@@ -1,9 +1,9 @@
 'use client'
 
-import React, {useState} from 'react';
-import Navbar from '../../components/Navbar';
-import EspecialidadesMedicas from '../../components/CartaEspecialidad';
-import Footer from '../../components/Footer';
+import React, { useState } from 'react';
+import Navbar from '../../../components/Navbar';
+import EspecialidadesMedicas from '../../../components/CartaEspecialidad';
+import Footer from '../../../components/Footer';
 import Link from 'next/link';
 
 export default function Especialidad() {
@@ -30,19 +30,22 @@ export default function Especialidad() {
         "Medicina Interna",
         "Gastroenterologia",
         "Nefrologia",
-      ];
+    ];
 
-      const [especialidadMedica, setEspecialidadMedica] = useState('');
+    const especialidadesOrdenadas = especialidadesMedicas.sort();
+    console.log(especialidadesOrdenadas);
 
-      const [mostrarEspecialidades, setMostrarEspecialidades] = useState(false);
+    const [especialidadMedica, setEspecialidadMedica] = useState('');
 
-      const handleEspecialidadChange = (e) => {
+    const [mostrarEspecialidades, setMostrarEspecialidades] = useState(false);
+
+    const handleEspecialidadChange = (e) => {
         setEspecialidadMedica(e.target.value);
-      };
-    
-      const handleBuscarClick = () => {
+    };
+
+    const handleBuscarClick = () => {
         setMostrarEspecialidades(true);
-      };
+    };
 
     return (
         <>
@@ -63,7 +66,7 @@ export default function Especialidad() {
                                 onChange={handleEspecialidadChange}
                             >
                                 <option disabled selected>Especialidad médica</option>
-                                {especialidadesMedicas.map((especialidad) => (
+                                {especialidadesOrdenadas.map((especialidad) => (
                                     <option key={especialidad} value={especialidad}>{especialidad}</option>
                                 ))}
                             </select>
@@ -71,8 +74,8 @@ export default function Especialidad() {
                                 <button className="btn join-item bg-green-700 hover:bg-green-500 text-white" onClick={handleBuscarClick}>Buscar</button>
                             </div>
                         </div>
-                        <div className="flex flex-col flex-wrap gap-3"> 
-                        {mostrarEspecialidades && <EspecialidadesMedicas area={especialidadMedica} icon="cross"/>}
+                        <div className="flex flex-col flex-wrap gap-3">
+                            {mostrarEspecialidades && <EspecialidadesMedicas area={especialidadMedica} icon="cross" />}
                             {/* <EspecialidadesMedicas area="Medicina General" icon="pill" id="medicina-general" />
                             <EspecialidadesMedicas area="Dental" icon="syringe" id="dental" />
                             <EspecialidadesMedicas area="Kinesiologia" icon="cross" id="kinesiologia" />
@@ -98,12 +101,12 @@ export default function Especialidad() {
                         </div>
                     </div>
                     <div className=" text-white flex justify-around p-6">
-                        <Link href="/formulario">
+                        <Link href="/datos_personales">
                             <button className="rounded-3xl bg-red-600 hover:bg-red-400 w-32 p-3" >
                                 Volver
                             </button>
                         </Link>
-                        <Link href="/horarios">
+                        <Link href="/agendar/horas_disponibles">
                             <button className="rounded-3xl bg-green-700 hover:bg-green-500 w-32 p-3">
                                 Confirmar
                             </button>

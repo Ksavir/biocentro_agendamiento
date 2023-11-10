@@ -1,9 +1,9 @@
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import CartaHorario from '../../components/CartaHorario';
-import Modal from '../../components/Modal';
+import Navbar from '../../../components/Navbar';
+import Footer from '../../../components/Footer';
+import CartaHorario from '../../../components/CartaHorario';
+import Modal from '../../../components/Modal';
 import Link from 'next/link';
-import Horas from '../../components/Horas';
+import Horas from '../../../components/Horas';
 
 export default function Horarios() {
     const doctores = [
@@ -48,7 +48,7 @@ export default function Horarios() {
 
                     </div>
                     <div className="flex justify-center mt-4">
-                        <Link href="/tipo_consulta">
+                        <Link href="/agendar/especialidad">
                             <button className="rounded-3xl bg-red-600 w-32 p-3 text-white font-bold" >
                                 Volver
                             </button>
